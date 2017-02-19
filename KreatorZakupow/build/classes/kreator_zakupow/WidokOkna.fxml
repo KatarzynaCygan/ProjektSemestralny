@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #007f80;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kreator_zakupow.WidokController">
+   <children>
+      <VBox prefHeight="160.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="wyborPKS" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ChoiceBox>
+            <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#buttonDodaj" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #007f80;" text="DODAJ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="btnUsun" mnemonicParsing="false" onAction="#buttonUsun" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #007f80;" text="USUŃ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="btnEdytuj" mnemonicParsing="false" onAction="#buttonEdytuj" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #007f80;" text="EDYTUJ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="2.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="200.0" prefHeight="200.0" prefWidth="270.0">
+         <children>
+            <Label fx:id="labelSort" alignment="CENTER" prefHeight="40.0" prefWidth="270.0" text="SORTOWANIE" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ChoiceBox fx:id="wyborKS" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ChoiceBox>
+            <ComboBox fx:id="wyborK" onAction="#combowyborK" prefHeight="40.0" prefWidth="270.0" promptText="KATEGORIE" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <ComboBox fx:id="wyborNS" onAction="#combowyborNS" prefHeight="40.0" prefWidth="270.0" promptText="SKLEPY" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <Button fx:id="btnSortuj" mnemonicParsing="false" onAction="#buttonSortuj" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #007f80;" text="SORTUJ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="1.0" />
+         </padding>
+      </VBox>
+      <VBox layoutY="164.0" prefHeight="540.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="label1" prefHeight="38.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text1" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label2" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text2" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label3" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text3" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label4" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text4" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label5" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text5" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label6" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text6" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label7" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text7" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label fx:id="label8" prefHeight="33.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="text8" prefHeight="33.0" prefWidth="200.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="470.0" prefHeight="200.0" prefWidth="270.0">
+         <children>
+            <Label fx:id="labelWys" alignment="CENTER" prefHeight="40.0" prefWidth="270.0" text="WYŚWIETLANIE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ChoiceBox fx:id="wyborPKSKS" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ChoiceBox>
+            <Label fx:id="labelNS" alignment="CENTER" prefHeight="40.0" prefWidth="270.0" text="Nazwa sklepu">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ComboBox fx:id="wyborNSK" onAction="#combowyborNSK" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ComboBox>
+            <Button fx:id="btnWyswietl" mnemonicParsing="false" onAction="#buttonWyswietl" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: #007f80;" text="WYŚWIETL">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="1.0" right="1.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="740.0" prefHeight="200.0" prefWidth="260.0">
+         <children>
+            <Label fx:id="labelPokaz" alignment="CENTER" prefHeight="40.0" prefWidth="260.0" text="WYSZUKIWANIE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ChoiceBox fx:id="wyborPKSA" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #007f80;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ChoiceBox>
+            <TextField fx:id="txtSzukana" prefHeight="40.0" prefWidth="260.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label prefHeight="40.0" prefWidth="260.0" />
+            <Button fx:id="btnWyszukaj" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#buttonWyszukaj" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #007f80;" text="WYSZUKAJ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+      </VBox>
+      <ListView fx:id="listaView" layoutX="202.0" layoutY="202.0" prefHeight="500.0" prefWidth="801.0" />
+   </children>
+</AnchorPane>
